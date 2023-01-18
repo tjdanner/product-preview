@@ -31,6 +31,7 @@ body {
     height: 435px;
 }
 
+
 .container img {
     width: 50%;
 }
@@ -78,7 +79,7 @@ body {
     text-decoration: line-through;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -100,18 +101,49 @@ button:hover {
     background-color: var(--darker-cyan);
 }
 
-button > * {
+button>* {
     margin: .5rem;
 }
 
-#cart{
+#cart {
     height: 1rem;
     width: 1rem;
 }
 
 @media screen and (max-width: 850px) {
     body {
-        padding: 10% 0;
+        padding: 10% 2%;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+    body {
+        padding: 5%;
     }
     
+    .container {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+   #desktop {
+    display: none;
+   }
+
+   #mobile {
+    width: 100%;
+   }
+
+    .content {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 581px) {
+    #mobile {
+        display: none;
+    }
 }
